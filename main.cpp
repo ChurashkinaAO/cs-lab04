@@ -108,9 +108,14 @@ void cale(uint16_t op1, char operat, uint16_t op2)
  }
 
   print_in_hex(&res, sizeof(res));
+  print_in_binary(&op1, sizeof(op1));
+  cout << ' '<< operat<<' ';
+  print_in_binary(&op2, sizeof(op2));
+  cout << " = ";
+  print_in_binary(&res, sizeof(res));
+
+
 }
-
-
 
 
 int main()
