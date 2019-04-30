@@ -107,7 +107,7 @@ void cale(uint16_t op1, char operat, uint16_t op2)
  res=op1 ^ op2;
  }
 
-
+  print_in_hex(&res, sizeof(res));
 }
 
 
@@ -148,6 +148,7 @@ int main()
     print_in_hex(&u32, sizeof(u32));
     cout << '\n';
 
-
+    print_in_binary(15);
+  cale(1025,'&',127);
 
 }
